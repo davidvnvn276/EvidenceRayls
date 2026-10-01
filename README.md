@@ -23,9 +23,11 @@ Use Git, Node.js 22 or a compatible Node version, and npm. Commands work in Powe
 Place `redemption-lab-v2` next to `rayls-sovereign-contracts`:
 
 ```text
+git clone https://github.com/davidvnvn276/EvidenceRayls.git
+git -C EvidenceRayls checkout --detach 032645d9f20b41fb13affc9f111f5a0914ec0aab
 git clone https://github.com/raylsnetwork/rayls-sovereign-contracts.git
 git -C rayls-sovereign-contracts checkout --detach bdf8f044b9a270e1f97c4c2ac6de9e32ec467de9
-cd redemption-lab-v2
+cd EvidenceRayls
 npm ci --ignore-scripts --no-audit --no-fund
 node run.cjs
 ```
