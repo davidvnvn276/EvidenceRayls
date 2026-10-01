@@ -1,0 +1,24 @@
+{
+  "language": "Solidity",
+  "sources": {
+    "RedemptionLab.sol": {
+      "content": "// SPDX-License-Identifier: MIT\npragma solidity 0.8.24;\n\nimport \"src/rayls-protocol-sdk/tokens/RaylsErc20Handler.sol\";\nimport \"src/rayls-node/rayls-public-chain/tokens/PublicChainERC20.sol\";\nimport \"src/privateHub/AccessControl/RaylsAccessManagerV1.sol\";\nimport \"@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol\";\nimport {IRaylsAccessManager} from \"src/privateHub/AccessControl/interfaces/IRaylsAccessManager.sol\";\n\n// Test doubles, not Rayls endpoints, registries, or production role configuration.\ncontract LabRegistry {\n    bool public active = true;\n    function setActive(bool a) external { active = a; }\n    function isTokenActiveForPublicChain(address) external view returns (bool) { return active; }\n    function getPrivacyNodeStatus(address) external pure returns (uint8) { return 2; }\n    function getPublicChainStatus(address) external view returns (uint8) { return active ? 2 : 0; }\n}\ncontract LabGovernance {\n    mapping(address => bool) public approved;\n    function approve(address a) external { approved[a] = true; }\n    function checkUserIsApprovedByPrivateAddress(address a) external view returns (bool) { return approved[a]; }\n}\ncontract LabEndpoint {\n    address public immutable authority;\n    address public immutable registry;\n    bytes public lastPayload;\n    bytes public lastRevert;\n    uint256 public nonce;\n    event LabMessage(bytes32 id, address caller, uint256 destinationChainId, address destination, bytes payload, bytes revertPayload);\n    constructor(address a, address r) { authority = a; registry = r; }\n    function getAddressByResourceId(bytes32) external view returns (address) { return registry; }\n    function getChainId() external pure returns (uint256) { return 1001; }\n    function sendToAddress(uint256 cid, address dest, bytes calldata payload, bytes memory rev, RaylsNodeBridgedTransferMetadata memory) external returns (bytes32 id) {\n        lastPayload = payload; lastRevert = rev;\n        id = keccak256(abi.encode(++nonce, msg.sender, cid, dest, payload));\n        emit LabMessage(id, msg.sender, cid, dest, payload, rev);\n    }\n}\ncontract LabPrivateToken is RaylsErc20Handler {\n    constructor(address e, address g, address recipient, uint256 amount)\n        RaylsErc20Handler(\"Lab deposit\", \"LDEP\", e, e, g, msg.sender, false) {\n        _mint(recipient, amount);\n    }\n    // No overrides: original teleport, receive, lock, unlock and auth logic is inherited.\n}\n"
+    }
+  },
+  "settings": {
+    "optimizer": {
+      "enabled": true,
+      "runs": 50
+    },
+    "evmVersion": "paris",
+    "outputSelection": {
+      "*": {
+        "*": [
+          "abi",
+          "evm.bytecode.object",
+          "evm.bytecode.linkReferences"
+        ]
+      }
+    }
+  }
+}

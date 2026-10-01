@@ -1,0 +1,557 @@
+{
+  "createdAt": "2026-10-01T07:33:43.415Z",
+  "contractsCommit": "bdf8f044b9a270e1f97c4c2ac6de9e32ec467de9",
+  "compiler": "0.8.24+commit.e11b9ed9.Emscripten.clang",
+  "environment": "one local Ganache EVM; manual callback execution; official AccessManagerV1 via two initialized ERC1967 proxies; mock endpoint, registry and user governance; original handler methods unmodified",
+  "sourceSha256": {
+    "src/rayls-protocol-sdk/tokens/RaylsErc20Handler.sol": "8ecbf6115b0c21d488f07dc84fd491fd757b8fbbb570f02a70f231815a51223c",
+    "src/rayls-node/rayls-public-chain/tokens/PublicChainERC20.sol": "d5b0fb50a37866a79d7137600bcb11410b76a94c3d4f4708e9609a87300a1819",
+    "src/privateHub/AccessControl/RaylsAccessManagerV1.sol": "5074ff55964a3bf9c03863d0dc2025f099a8c5008911a13115219c62a65ca6fe",
+    "@openzeppelin/contracts/proxy/ERC1967/ERC1967Proxy.sol": "a06fe97082355529c1da9076ea6c4518875ca9fdb1a4fa1e194c35cff21b29a1",
+    "src/privateHub/AccessControl/interfaces/IRaylsAccessManager.sol": "133fd571981ba286619e119c421973422f071f84c97fae24709e62a9282a70dc",
+    "@openzeppelin/contracts/proxy/Proxy.sol": "5f5081378d4bc82b814b0d64990b7f7b9c69697593b73a3341f4a269940ba540",
+    "@openzeppelin/contracts/proxy/ERC1967/ERC1967Utils.sol": "58c5b19893bf3d7f9e1aa0edc5b908b915eb7af4381800deb425a6e5331f4432",
+    "@openzeppelin/contracts-upgradeable/proxy/utils/Initializable.sol": "f527a063813c2bf60c153fb08e38539578935402894fcc36fac42324ca325d3b",
+    "@openzeppelin/contracts-upgradeable/proxy/utils/UUPSUpgradeable.sol": "2d07bcf9728190a5c807cf68defc3f3c52aa098d04770d44af37f30abade38d5",
+    "src/privateHub/AccessControl/RaylsAccessManaged.sol": "3fe003466ded2c697ab59639fb4bdaf5a253b9b803428431e14a0d7f8dc8c4b1",
+    "src/privateHub/AccessControl/AccessManagerTypes.sol": "8b19c7d3f66a2525adfb571ae576907310afc5ca225c7e134de121119315b243",
+    "src/privateHub/AccessControl/libraries/AccessManagerAuthLib.sol": "dc064a9dc027bb376a8fc044ef1556fd7e6a135c3f0016e853f08b00267a534f",
+    "src/privateHub/AccessControl/libraries/AccessManagerEnumerationLib.sol": "a40220f0d34bee7cf439b09a2a7f475be32e7c6ba5c21eefbaf7ff9fb43ae393",
+    "src/privateHub/AccessControl/libraries/AccessManagerContractScopedLib.sol": "242ff049e38a1bba6f4ed35626a26e594307ca949cfdada7f522e1b10cf84d02",
+    "src/privateHub/AccessControl/libraries/AccessManagerScheduleLib.sol": "e2fcd3d9f3d4b256590182ccb81ab0e0930515edb589f34fedcac2b9fab19190",
+    "src/privateHub/AccessControl/libraries/AccessManagerRoleConfigLib.sol": "596033e0a1aab4ca56a0382e5ab8eece17988e7ed7739cd497558fdf9181803b",
+    "src/rayls-node/rayls-public-chain/tokens/RaylsPublicERC20Handler.sol": "fea79c87f3599c8c79836e1aa8024c8dc720104b3e6949263cbec238372ed464",
+    "src/rayls-protocol-sdk/RaylsMessage.sol": "efd976ae8a09a94876bfc1e7f3b5257f6cdfefa8cb77a2f604a23f5c9990baf6",
+    "src/rayls-protocol-sdk/interfaces/IRaylsEndpoint.sol": "503a7f6e2de4524d9043b47d07aceb20dc33ac8c89c90054a757fcef54250481",
+    "src/rayls-protocol-sdk/libraries/SharedObjects.sol": "dbc214f2cd3c1c71a8f12630be9ce775915383756001a5308603092dbb69abca",
+    "src/rayls-protocol-sdk/libraries/Utils.sol": "ec897dab4cfcf5dec6f84af22480a2feb128c6a2431144142aebae56d26ae2c9",
+    "@openzeppelin/contracts/token/ERC20/ERC20.sol": "9f906af4cba6e7e091dc12d45e6687e1239cf82d17678198424250fd64ab96bd",
+    "src/rayls-node/rayls-privacy-node/interfaces/IUserGovernanceV1.sol": "f1e2128e0ad5ec93407a187b2030959bf1cd4fe4c8178f7b9c8007bb57d6b9d2",
+    "src/rayls-node/rayls-privacy-node/interfaces/IRaylsNodeEndpoint.sol": "93453f6126a5e34dd5770e40401ef93788a29a1c236af2b4cd0c6e296b783836",
+    "src/rayls-protocol-sdk/RaylsApp.sol": "d773be9ab9da776e9a959fbc001c26097eb940e3d997195e37ea0daca5b21ccc",
+    "src/rayls-protocol-sdk/IRaylsInitializer.sol": "5cdb027012d749cac0eadd7517967b19ec0c8739023a0fc3267e4c597e84e09a",
+    "src/rayls-protocol-sdk/interfaces/IRaylsTokenStandard.sol": "eedbf5fb22f1cd57927d863e4e50e9526c0573766ff3bd161f2bbc9896423e34",
+    "src/rayls-protocol/RaylsContractFactory/FactoryKeys.sol": "27918d05de48dd6b27ff68d4c846210173ffdbc6737fac5bffd2392d292d3e75",
+    "src/rayls-node/rayls-privacy-node/RNMessageLib.sol": "c7cfd7b664b1d9e4c9a8a4decf63ce4338e01b0a571ee9e2158d93b422fa93c1",
+    "@openzeppelin/contracts/proxy/beacon/IBeacon.sol": "c1c9726bbb0ec4c540c7c98059dcded69a8586b46c168036672381033ee76239",
+    "@openzeppelin/contracts/interfaces/IERC1967.sol": "c4e901318ab6d4963582c62c62ce988a34c68dbae71846b67decacde79e9a317",
+    "@openzeppelin/contracts/utils/Address.sol": "f1a9255dbc40cf9ae7c786abed3b022691a9d24bca0c7f05dc60e63421d405ab",
+    "@openzeppelin/contracts/utils/StorageSlot.sol": "75704538dcb223239280c6726d9a31cf769a7816718517c997fc7d63bdb70778",
+    "@openzeppelin/contracts/interfaces/draft-IERC1822.sol": "73653312bc2eda0ec231553a5295242eaef2d4f46a023532d45fe76cbd0f565f",
+    "@openzeppelin/contracts/utils/structs/EnumerableSet.sol": "53507e71995d0e76d29d6dd897d0bcc3f069fd81f03cb431d7342bdfcc0d5345",
+    "src/privateHub/AccessControl/interfaces/IRaylsAccessManaged.sol": "c0644509ed083e0ecd9d5f97add3ca2ce8190ae5e6bcf0f75f66b4aa7943bc3b",
+    "src/rayls-node/rayls-public-chain/RaylsPublicApp.sol": "6e14071d581b89c8438e18384ea93f25263fadd9a889c491ab46805bcf1072a2",
+    "@openzeppelin/contracts/token/ERC20/IERC20.sol": "01b6f5c4fa45fd38822b286ecef6daf983d27306dd6362496fa71b3e4600b72c",
+    "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol": "0b7132f17d14d1d84b41b0bb429be62dafdff00fd3470f68724d8018eb07f57a",
+    "@openzeppelin/contracts/utils/Context.sol": "847fda5460fee70f56f4200f59b82ae622bb03c79c77e67af010e31b7e2cc5b6",
+    "@openzeppelin/contracts/interfaces/draft-IERC6093.sol": "df936240c9a5d342582cbda70dd773b1c1d0e0dda3042b1c17b902ef0c36827b",
+    "src/rayls-node/rayls-privacy-node/interfaces/IRaylsMessageExecutor.sol": "b139313d090fa3af6750e281b81eddf92449569b793a66f47bf2f7f2fe8a322a",
+    "src/rayls-protocol-sdk/Constants.sol": "25c4e4a1dc454c5b2a31647e849305dca9c967a20d8e7945fcf54639e6169368",
+    "src/rayls-protocol-sdk/interfaces/IRaylsAppV1TokenRegistry.sol": "25f83fa94079e2f63f3347f6ff0363e16ff95a1fe4ca07ceb0b10e22e14c9aec",
+    "src/rayls-protocol-sdk/libraries/MessageLib.sol": "dfdb320895b5ee0895a926728c551140317132a27b41f8f21712ee62534463ca",
+    "@openzeppelin/contracts/utils/Errors.sol": "0704b9d6c032cca8512a3bc3f30f49f86f1f03102d2896a3d23e794b82efea66",
+    "@openzeppelin/contracts/utils/Arrays.sol": "8320f75b46c18204dd6f2b3654058129625b849a95c3a55a44ae531f77f0eca9",
+    "@openzeppelin/contracts/utils/math/Math.sol": "92fee281fd46a1b058b190cf21d6b1a528f0433a907850ae1c9bcf36c5c0cd98",
+    "src/rayls-node/rayls-privacy-node/interfaces/IPublicRaylsNodeEndpoint.sol": "b360a8dc8eecffcaa96aa25551dcdb48ced6677a00486814fbe4668f3019aca1",
+    "src/rayls-protocol-sdk/interfaces/IRaylsMessageExecutor.sol": "a86cf5a135fc6e0f80a7f2bdfe4aeb597e1e2bb2c8eefd55f823aa29c2971d96",
+    "@openzeppelin/contracts/utils/Comparators.sol": "52fb1c8f57967d42a3214bde4a8a414ab25c2e3a844d00e171ca56487024e009",
+    "@openzeppelin/contracts/utils/SlotDerivation.sol": "daddbbeb265c87b7172548d58baede96b167cd89c6c7884ff2705676fab69438",
+    "@openzeppelin/contracts/utils/Panic.sol": "270fc8401c1a13fae6a7a4a2dd6e381b95d658896701e51f0d3e2688acab3dec",
+    "@openzeppelin/contracts/utils/math/SafeCast.sol": "9769274bf53f26a7c7896c526ea1980dc9bea5bf5c2a5fd04870008c4afc1de9"
+  },
+  "runs": [
+    {
+      "amount": "1.0",
+      "before": {
+        "lockedA": "100000.0",
+        "lockedB": "0.0",
+        "privateContractBalance": "100000.0",
+        "privateA": "0.0",
+        "privateB": "0.0",
+        "privateSupply": "100000.0",
+        "publicA": "99999.0",
+        "publicB": "1.0",
+        "publicSupply": "100000.0"
+      },
+      "afterBurn": {
+        "lockedA": "100000.0",
+        "lockedB": "0.0",
+        "privateContractBalance": "100000.0",
+        "privateA": "0.0",
+        "privateB": "0.0",
+        "privateSupply": "100000.0",
+        "publicA": "99999.0",
+        "publicB": "0.0",
+        "publicSupply": "99999.0"
+      },
+      "failedDestination": {
+        "error": "RaylsErc20Handler__InsufficientLockedAmount",
+        "args": [
+          "1000000000000000000",
+          "0"
+        ],
+        "hash": "0xcf98a5f7b8b9c5fbd408399d6f4f5da9a8f84b7d5f18bbb00aceef6492950a23",
+        "receiptStatus": 0
+      },
+      "afterFailure": {
+        "lockedA": "100000.0",
+        "lockedB": "0.0",
+        "privateContractBalance": "100000.0",
+        "privateA": "0.0",
+        "privateB": "0.0",
+        "privateSupply": "100000.0",
+        "publicA": "99999.0",
+        "publicB": "0.0",
+        "publicSupply": "99999.0"
+      },
+      "compensationHash": "0x7ee7e78c24fa7e9fdc0c3853b1074ecaca7e796411bfd95404a554779cd53932",
+      "afterCompensation": {
+        "lockedA": "100000.0",
+        "lockedB": "0.0",
+        "privateContractBalance": "100000.0",
+        "privateA": "0.0",
+        "privateB": "0.0",
+        "privateSupply": "100000.0",
+        "publicA": "99999.0",
+        "publicB": "1.0",
+        "publicSupply": "100000.0"
+      },
+      "controlDestination": "A (original locker)",
+      "controlBurnHash": "0x4d5ebd134e81c12ce2c6b377362795235dad69183b42054265300fff72c6236a",
+      "returnHash": "0x507d1f5f8b2f224cf6354f0296a7533ea624465ba6932091db7db3d4fb4b544b",
+      "afterSuccess": {
+        "lockedA": "99999.0",
+        "lockedB": "0.0",
+        "privateContractBalance": "99999.0",
+        "privateA": "1.0",
+        "privateB": "0.0",
+        "privateSupply": "100000.0",
+        "publicA": "99999.0",
+        "publicB": "0.0",
+        "publicSupply": "99999.0"
+      },
+      "burnHash": "0x621821b8dbf6e1f5a013cb6b141428c470ee7346bfa7493c49baa49badc5bfeb",
+      "events": {
+        "burn": [
+          {
+            "name": "Transfer",
+            "args": [
+              "0x22d491Bde2303f2f43325b2108D26f1eAbA1e32b",
+              "0x0000000000000000000000000000000000000000",
+              "1000000000000000000"
+            ]
+          }
+        ],
+        "compensation": [
+          {
+            "name": "Transfer",
+            "args": [
+              "0x0000000000000000000000000000000000000000",
+              "0x22d491Bde2303f2f43325b2108D26f1eAbA1e32b",
+              "1000000000000000000"
+            ]
+          }
+        ],
+        "return": [
+          {
+            "name": "TokensUnlocked",
+            "args": [
+              "0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0",
+              "1000000000000000000"
+            ]
+          },
+          {
+            "name": "Transfer",
+            "args": [
+              "0x2612Af3A521c2df9EAF28422Ca335b04AdF3ac66",
+              "0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0",
+              "1000000000000000000"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "amount": "40000.0",
+      "before": {
+        "lockedA": "100000.0",
+        "lockedB": "0.0",
+        "privateContractBalance": "100000.0",
+        "privateA": "0.0",
+        "privateB": "0.0",
+        "privateSupply": "100000.0",
+        "publicA": "60000.0",
+        "publicB": "40000.0",
+        "publicSupply": "100000.0"
+      },
+      "afterBurn": {
+        "lockedA": "100000.0",
+        "lockedB": "0.0",
+        "privateContractBalance": "100000.0",
+        "privateA": "0.0",
+        "privateB": "0.0",
+        "privateSupply": "100000.0",
+        "publicA": "60000.0",
+        "publicB": "0.0",
+        "publicSupply": "60000.0"
+      },
+      "failedDestination": {
+        "error": "RaylsErc20Handler__InsufficientLockedAmount",
+        "args": [
+          "40000000000000000000000",
+          "0"
+        ],
+        "hash": "0x34228ddb817ac152a21b989c99bbfc0885cc84c3569628ff807bf800e771ac43",
+        "receiptStatus": 0
+      },
+      "afterFailure": {
+        "lockedA": "100000.0",
+        "lockedB": "0.0",
+        "privateContractBalance": "100000.0",
+        "privateA": "0.0",
+        "privateB": "0.0",
+        "privateSupply": "100000.0",
+        "publicA": "60000.0",
+        "publicB": "0.0",
+        "publicSupply": "60000.0"
+      },
+      "compensationHash": "0xb4f9419777e19f683182bcf95918e2bf87e56317db208502ad2b430d28e6bb32",
+      "afterCompensation": {
+        "lockedA": "100000.0",
+        "lockedB": "0.0",
+        "privateContractBalance": "100000.0",
+        "privateA": "0.0",
+        "privateB": "0.0",
+        "privateSupply": "100000.0",
+        "publicA": "60000.0",
+        "publicB": "40000.0",
+        "publicSupply": "100000.0"
+      },
+      "controlDestination": "A (original locker)",
+      "controlBurnHash": "0xadf88f9eb86773ce46e4369c5d4a622fdcf4840ffa3a1577b811d62c28413888",
+      "returnHash": "0x71af536396d027134538dfd65f2dc4c88c89dc822d5c8955a62a26d72b036f77",
+      "afterSuccess": {
+        "lockedA": "60000.0",
+        "lockedB": "0.0",
+        "privateContractBalance": "60000.0",
+        "privateA": "40000.0",
+        "privateB": "0.0",
+        "privateSupply": "100000.0",
+        "publicA": "60000.0",
+        "publicB": "0.0",
+        "publicSupply": "60000.0"
+      },
+      "burnHash": "0x1c1f25e0c2240d5b4252392908deea4963b5b1355e6ae4680b02514e45932695",
+      "events": {
+        "burn": [
+          {
+            "name": "Transfer",
+            "args": [
+              "0x22d491Bde2303f2f43325b2108D26f1eAbA1e32b",
+              "0x0000000000000000000000000000000000000000",
+              "40000000000000000000000"
+            ]
+          }
+        ],
+        "compensation": [
+          {
+            "name": "Transfer",
+            "args": [
+              "0x0000000000000000000000000000000000000000",
+              "0x22d491Bde2303f2f43325b2108D26f1eAbA1e32b",
+              "40000000000000000000000"
+            ]
+          }
+        ],
+        "return": [
+          {
+            "name": "TokensUnlocked",
+            "args": [
+              "0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0",
+              "40000000000000000000000"
+            ]
+          },
+          {
+            "name": "Transfer",
+            "args": [
+              "0xaD888d0Ade988EbEe74B8D4F39BF29a8d0fe8A8D",
+              "0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0",
+              "40000000000000000000000"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "amount": "100000.0",
+      "before": {
+        "lockedA": "100000.0",
+        "lockedB": "0.0",
+        "privateContractBalance": "100000.0",
+        "privateA": "0.0",
+        "privateB": "0.0",
+        "privateSupply": "100000.0",
+        "publicA": "0.0",
+        "publicB": "100000.0",
+        "publicSupply": "100000.0"
+      },
+      "afterBurn": {
+        "lockedA": "100000.0",
+        "lockedB": "0.0",
+        "privateContractBalance": "100000.0",
+        "privateA": "0.0",
+        "privateB": "0.0",
+        "privateSupply": "100000.0",
+        "publicA": "0.0",
+        "publicB": "0.0",
+        "publicSupply": "0.0"
+      },
+      "failedDestination": {
+        "error": "RaylsErc20Handler__InsufficientLockedAmount",
+        "args": [
+          "100000000000000000000000",
+          "0"
+        ],
+        "hash": "0x0b037b5eae5174084effacfa89306183d22dfb16beb0d1a217edb2f919fc86e9",
+        "receiptStatus": 0
+      },
+      "afterFailure": {
+        "lockedA": "100000.0",
+        "lockedB": "0.0",
+        "privateContractBalance": "100000.0",
+        "privateA": "0.0",
+        "privateB": "0.0",
+        "privateSupply": "100000.0",
+        "publicA": "0.0",
+        "publicB": "0.0",
+        "publicSupply": "0.0"
+      },
+      "compensationHash": "0x99732252e851957db5836cbc97601eb78ef5c46334d0b325527f1ece34dbf152",
+      "afterCompensation": {
+        "lockedA": "100000.0",
+        "lockedB": "0.0",
+        "privateContractBalance": "100000.0",
+        "privateA": "0.0",
+        "privateB": "0.0",
+        "privateSupply": "100000.0",
+        "publicA": "0.0",
+        "publicB": "100000.0",
+        "publicSupply": "100000.0"
+      },
+      "controlDestination": "A (original locker)",
+      "controlBurnHash": "0x8a1973ebc3b5e53b68d0194f790a5c34d568fffd13b6f170539cef6196af03ce",
+      "returnHash": "0x12ca9d2ce883df5224ee962625ec5781f4a037845ac8bed14eaff2285ca8f1e8",
+      "afterSuccess": {
+        "lockedA": "0.0",
+        "lockedB": "0.0",
+        "privateContractBalance": "0.0",
+        "privateA": "100000.0",
+        "privateB": "0.0",
+        "privateSupply": "100000.0",
+        "publicA": "0.0",
+        "publicB": "0.0",
+        "publicSupply": "0.0"
+      },
+      "burnHash": "0x7778e5cc5e757e95307737b90ed559fee4148298d155ced446c0a3bfe5738705",
+      "events": {
+        "burn": [
+          {
+            "name": "Transfer",
+            "args": [
+              "0x22d491Bde2303f2f43325b2108D26f1eAbA1e32b",
+              "0x0000000000000000000000000000000000000000",
+              "100000000000000000000000"
+            ]
+          }
+        ],
+        "compensation": [
+          {
+            "name": "Transfer",
+            "args": [
+              "0x0000000000000000000000000000000000000000",
+              "0x22d491Bde2303f2f43325b2108D26f1eAbA1e32b",
+              "100000000000000000000000"
+            ]
+          }
+        ],
+        "return": [
+          {
+            "name": "TokensUnlocked",
+            "args": [
+              "0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0",
+              "100000000000000000000000"
+            ]
+          },
+          {
+            "name": "Transfer",
+            "args": [
+              "0x7414e38377D6DAf6045626EC8a8ABB8a1BC4B97a",
+              "0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0",
+              "100000000000000000000000"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "boundaryCases": [
+    {
+      "label": "zero recipient rejected before burn",
+      "error": "RaylsPublicERC20Handler__DestinationIsZeroAddress",
+      "args": [],
+      "hash": "0x1ccdc0402e9f3bbfb85484159ade985c11cab205990216c452b936196371a8e4",
+      "receiptStatus": 0,
+      "stateUnchanged": true
+    },
+    {
+      "label": "zero amount rejected before burn",
+      "error": "RaylsPublicERC20Handler__AmountMustBeGreaterThanZero",
+      "args": [],
+      "hash": "0x5d97da1ba41fa560c8c7132fcd4a903c980aea566c093b2def424eab3f9ad2d6",
+      "receiptStatus": 0,
+      "stateUnchanged": true
+    },
+    {
+      "label": "destination amount exceeds recipient lock",
+      "error": "RaylsErc20Handler__InsufficientLockedAmount",
+      "args": [
+        "100001000000000000000000",
+        "100000000000000000000000"
+      ],
+      "hash": "0xb2faa606eed2ecd96ec501cf2c4b8d04b427b2382e7a29c5a87bf7b0e897f6de",
+      "receiptStatus": 0,
+      "stateUnchanged": true
+    },
+    {
+      "label": "unapproved Sovereign sender",
+      "error": "RaylsApp__UserNotRegistered",
+      "args": [
+        "0xE11BA2b4D45Eaed5996Cd0823791E0C93114882d"
+      ],
+      "hash": "0x087d1baf4f2419deeefef6be9037f97f8ac3265c75f1525d94ffedf3df6acbef",
+      "receiptStatus": 0,
+      "stateUnchanged": true
+    },
+    {
+      "label": "unauthorized return callback under official AccessManager",
+      "error": "RaylsAccessManaged__Unauthorized",
+      "args": [
+        "0xE11BA2b4D45Eaed5996Cd0823791E0C93114882d"
+      ],
+      "hash": "0x4631db58fe7adda9dcd2cae03cf9df47594e0a192f9329a10a2cc8162fa0d715",
+      "receiptStatus": 0,
+      "stateUnchanged": true
+    },
+    {
+      "label": "inactive destination token",
+      "error": "RaylsApp__PublicChainNotActive",
+      "args": [
+        "0xe97DbD7116D168190F8A6E7beB1092c103c53a12",
+        "2",
+        "0"
+      ],
+      "hash": "0xb0caef6d1e000f1e7cc59d1a7dbea10627e34d0f5604e50aa70dfe4c2852add9",
+      "receiptStatus": 0,
+      "stateUnchanged": true
+    },
+    {
+      "label": "revoked MESSAGE_EXECUTOR rejected",
+      "error": "RaylsAccessManaged__Unauthorized",
+      "args": [
+        "0x90F8bf6A479f320ead074411a4B0e7944Ea8c9C1"
+      ],
+      "hash": "0x0a4e8feb803cf716992b747dbc12f8cc3843e52f7e92c3182e7b752c3ecd6afe",
+      "receiptStatus": 0,
+      "stateUnchanged": true
+    },
+    {
+      "label": "delayed MESSAGE_EXECUTOR must schedule",
+      "error": "RaylsAccessManaged__MustSchedule",
+      "args": [
+        "0x90F8bf6A479f320ead074411a4B0e7944Ea8c9C1",
+        "60"
+      ],
+      "hash": "0x68111ee4bc27ab64b78cbb18f76ddb8dbfa77b65709437312206ccba1c15fabe",
+      "receiptStatus": 0,
+      "stateUnchanged": true
+    },
+    {
+      "label": "paused private token blocks callback",
+      "error": "RaylsAccessManaged__ContractPaused",
+      "args": [],
+      "hash": "0x5e0a50ace340be8447e1a8f3e1ccdfc333ff6a2e9b7864c93807185276d03c09",
+      "receiptStatus": 0,
+      "stateUnchanged": true
+    }
+  ],
+  "blockedCompensation": {
+    "amount": "40000.0",
+    "burnHash": "0x79a5ebfbeeb7583754cd7a0ed9eb143683331f3d215b600bb9181466f81ab15b",
+    "destinationFailure": {
+      "error": "RaylsErc20Handler__InsufficientLockedAmount",
+      "args": [
+        "40000000000000000000000",
+        "0"
+      ],
+      "hash": "0x7cbf2da38d3f59d1ed7f934f25bc275820b6b6014ae9b524576ec24d17b6c703",
+      "receiptStatus": 0
+    },
+    "compensationFailure": {
+      "error": "RaylsAccessManaged__ContractPaused",
+      "args": [],
+      "hash": "0x4205a7bc455827f6c52f3f2171026aed9dc2cb8422b1fe168e5fb44f3640d130",
+      "receiptStatus": 0
+    },
+    "before": {
+      "lockedA": "100000.0",
+      "lockedB": "0.0",
+      "privateContractBalance": "100000.0",
+      "privateA": "0.0",
+      "privateB": "0.0",
+      "privateSupply": "100000.0",
+      "publicA": "60000.0",
+      "publicB": "40000.0",
+      "publicSupply": "100000.0"
+    },
+    "pending": {
+      "lockedA": "100000.0",
+      "lockedB": "0.0",
+      "privateContractBalance": "100000.0",
+      "privateA": "0.0",
+      "privateB": "0.0",
+      "privateSupply": "100000.0",
+      "publicA": "60000.0",
+      "publicB": "0.0",
+      "publicSupply": "60000.0"
+    },
+    "restored": {
+      "lockedA": "100000.0",
+      "lockedB": "0.0",
+      "privateContractBalance": "100000.0",
+      "privateA": "0.0",
+      "privateB": "0.0",
+      "privateSupply": "100000.0",
+      "publicA": "60000.0",
+      "publicB": "40000.0",
+      "publicSupply": "100000.0"
+    },
+    "recoveryHash": "0x6b68c172f9f1022a42071853cb8fe2508920b7e2fae64c642a6b38c87e92df38"
+  },
+  "realAuthority": {
+    "privateManager": "0xc0b3B62DD0400E4baa721DdEc9B8A384147b23fF",
+    "publicManager": "0xCeeFD27e0542aFA926B87d23936c79c276A48277",
+    "implementation": "0xD833215cBcc3f914bD1C9ece3EE7BF8B14f841bb",
+    "executor": "0x90F8bf6A479f320ead074411a4B0e7944Ea8c9C1",
+    "admin": "0xd03ea8624C8C5987235048901fB614fDcA89b117",
+    "executorIsAdmin": false,
+    "linkedLibraries": {
+      "src/privateHub/AccessControl/libraries/AccessManagerAuthLib.sol:AccessManagerAuthLib": "0xe78A0F7E598Cc8b0Bb87894B0F60dD2a88d6a8Ab",
+      "src/privateHub/AccessControl/libraries/AccessManagerContractScopedLib.sol:AccessManagerContractScopedLib": "0x5b1869D9A4C187F2EAa108f3062412ecf0526b24",
+      "src/privateHub/AccessControl/libraries/AccessManagerEnumerationLib.sol:AccessManagerEnumerationLib": "0xCfEB869F69431e42cdB54A4F4f105C19C080A601",
+      "src/privateHub/AccessControl/libraries/AccessManagerRoleConfigLib.sol:AccessManagerRoleConfigLib": "0x254dffcd3277C0b1660F6d42EFbB754edaBAbC2B",
+      "src/privateHub/AccessControl/libraries/AccessManagerScheduleLib.sol:AccessManagerScheduleLib": "0xC89Ce4735882C9F0f0FE26686c53074E09B0D550"
+    }
+  },
+  "passed": true,
+  "receiptFailures": 14
+}

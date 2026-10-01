@@ -1,0 +1,389 @@
+{
+  "checkedAt": "2026-10-01T08:07:29.773Z",
+  "contractsCommit": "bdf8f044b9a270e1f97c4c2ac6de9e32ec467de9",
+  "independentExitCode": 0,
+  "nodeVersion": "v24.19.0",
+  "compiler": "0.8.24+commit.e11b9ed9.Emscripten.clang",
+  "sourceFilesCompared": 54,
+  "raylsSourceFilesMatchedToGit": 31,
+  "matchingAssertions": 93,
+  "comparisonIgnores": [
+    "execution timestamp",
+    "local transaction hashes"
+  ],
+  "checked": [
+    {
+      "check": "run1.amount",
+      "matches": true
+    },
+    {
+      "check": "run1.before",
+      "matches": true
+    },
+    {
+      "check": "run1.afterBurn",
+      "matches": true
+    },
+    {
+      "check": "run1.afterFailure",
+      "matches": true
+    },
+    {
+      "check": "run1.afterCompensation",
+      "matches": true
+    },
+    {
+      "check": "run1.afterSuccess",
+      "matches": true
+    },
+    {
+      "check": "run1.events",
+      "matches": true
+    },
+    {
+      "check": "run1.controlDestination",
+      "matches": true
+    },
+    {
+      "check": "run1.failedDestination.error",
+      "matches": true
+    },
+    {
+      "check": "run1.failedDestination.args",
+      "matches": true
+    },
+    {
+      "check": "run1.failedDestination.receiptStatus",
+      "matches": true
+    },
+    {
+      "check": "run2.amount",
+      "matches": true
+    },
+    {
+      "check": "run2.before",
+      "matches": true
+    },
+    {
+      "check": "run2.afterBurn",
+      "matches": true
+    },
+    {
+      "check": "run2.afterFailure",
+      "matches": true
+    },
+    {
+      "check": "run2.afterCompensation",
+      "matches": true
+    },
+    {
+      "check": "run2.afterSuccess",
+      "matches": true
+    },
+    {
+      "check": "run2.events",
+      "matches": true
+    },
+    {
+      "check": "run2.controlDestination",
+      "matches": true
+    },
+    {
+      "check": "run2.failedDestination.error",
+      "matches": true
+    },
+    {
+      "check": "run2.failedDestination.args",
+      "matches": true
+    },
+    {
+      "check": "run2.failedDestination.receiptStatus",
+      "matches": true
+    },
+    {
+      "check": "run3.amount",
+      "matches": true
+    },
+    {
+      "check": "run3.before",
+      "matches": true
+    },
+    {
+      "check": "run3.afterBurn",
+      "matches": true
+    },
+    {
+      "check": "run3.afterFailure",
+      "matches": true
+    },
+    {
+      "check": "run3.afterCompensation",
+      "matches": true
+    },
+    {
+      "check": "run3.afterSuccess",
+      "matches": true
+    },
+    {
+      "check": "run3.events",
+      "matches": true
+    },
+    {
+      "check": "run3.controlDestination",
+      "matches": true
+    },
+    {
+      "check": "run3.failedDestination.error",
+      "matches": true
+    },
+    {
+      "check": "run3.failedDestination.args",
+      "matches": true
+    },
+    {
+      "check": "run3.failedDestination.receiptStatus",
+      "matches": true
+    },
+    {
+      "check": "boundary1.label",
+      "matches": true
+    },
+    {
+      "check": "boundary1.error",
+      "matches": true
+    },
+    {
+      "check": "boundary1.args",
+      "matches": true
+    },
+    {
+      "check": "boundary1.receiptStatus",
+      "matches": true
+    },
+    {
+      "check": "boundary1.stateUnchanged",
+      "matches": true
+    },
+    {
+      "check": "boundary2.label",
+      "matches": true
+    },
+    {
+      "check": "boundary2.error",
+      "matches": true
+    },
+    {
+      "check": "boundary2.args",
+      "matches": true
+    },
+    {
+      "check": "boundary2.receiptStatus",
+      "matches": true
+    },
+    {
+      "check": "boundary2.stateUnchanged",
+      "matches": true
+    },
+    {
+      "check": "boundary3.label",
+      "matches": true
+    },
+    {
+      "check": "boundary3.error",
+      "matches": true
+    },
+    {
+      "check": "boundary3.args",
+      "matches": true
+    },
+    {
+      "check": "boundary3.receiptStatus",
+      "matches": true
+    },
+    {
+      "check": "boundary3.stateUnchanged",
+      "matches": true
+    },
+    {
+      "check": "boundary4.label",
+      "matches": true
+    },
+    {
+      "check": "boundary4.error",
+      "matches": true
+    },
+    {
+      "check": "boundary4.args",
+      "matches": true
+    },
+    {
+      "check": "boundary4.receiptStatus",
+      "matches": true
+    },
+    {
+      "check": "boundary4.stateUnchanged",
+      "matches": true
+    },
+    {
+      "check": "boundary5.label",
+      "matches": true
+    },
+    {
+      "check": "boundary5.error",
+      "matches": true
+    },
+    {
+      "check": "boundary5.args",
+      "matches": true
+    },
+    {
+      "check": "boundary5.receiptStatus",
+      "matches": true
+    },
+    {
+      "check": "boundary5.stateUnchanged",
+      "matches": true
+    },
+    {
+      "check": "boundary6.label",
+      "matches": true
+    },
+    {
+      "check": "boundary6.error",
+      "matches": true
+    },
+    {
+      "check": "boundary6.args",
+      "matches": true
+    },
+    {
+      "check": "boundary6.receiptStatus",
+      "matches": true
+    },
+    {
+      "check": "boundary6.stateUnchanged",
+      "matches": true
+    },
+    {
+      "check": "boundary7.label",
+      "matches": true
+    },
+    {
+      "check": "boundary7.error",
+      "matches": true
+    },
+    {
+      "check": "boundary7.args",
+      "matches": true
+    },
+    {
+      "check": "boundary7.receiptStatus",
+      "matches": true
+    },
+    {
+      "check": "boundary7.stateUnchanged",
+      "matches": true
+    },
+    {
+      "check": "boundary8.label",
+      "matches": true
+    },
+    {
+      "check": "boundary8.error",
+      "matches": true
+    },
+    {
+      "check": "boundary8.args",
+      "matches": true
+    },
+    {
+      "check": "boundary8.receiptStatus",
+      "matches": true
+    },
+    {
+      "check": "boundary8.stateUnchanged",
+      "matches": true
+    },
+    {
+      "check": "boundary9.label",
+      "matches": true
+    },
+    {
+      "check": "boundary9.error",
+      "matches": true
+    },
+    {
+      "check": "boundary9.args",
+      "matches": true
+    },
+    {
+      "check": "boundary9.receiptStatus",
+      "matches": true
+    },
+    {
+      "check": "boundary9.stateUnchanged",
+      "matches": true
+    },
+    {
+      "check": "blockedCompensation.amount",
+      "matches": true
+    },
+    {
+      "check": "blockedCompensation.before",
+      "matches": true
+    },
+    {
+      "check": "blockedCompensation.pending",
+      "matches": true
+    },
+    {
+      "check": "blockedCompensation.restored",
+      "matches": true
+    },
+    {
+      "check": "blockedCompensation.destinationFailure.error",
+      "matches": true
+    },
+    {
+      "check": "blockedCompensation.destinationFailure.args",
+      "matches": true
+    },
+    {
+      "check": "blockedCompensation.destinationFailure.receiptStatus",
+      "matches": true
+    },
+    {
+      "check": "blockedCompensation.compensationFailure.error",
+      "matches": true
+    },
+    {
+      "check": "blockedCompensation.compensationFailure.args",
+      "matches": true
+    },
+    {
+      "check": "blockedCompensation.compensationFailure.receiptStatus",
+      "matches": true
+    },
+    {
+      "check": "sourceSha256_all54",
+      "matches": true
+    },
+    {
+      "check": "passed",
+      "matches": true
+    },
+    {
+      "check": "receiptFailures",
+      "matches": true
+    },
+    {
+      "check": "runsCount",
+      "matches": true
+    },
+    {
+      "check": "boundaryCount",
+      "matches": true
+    }
+  ],
+  "scope": "Local contract execution on one Ganache EVM; manual callbacks; original AccessManager; mocked endpoint, registry, governance. Not a live bridge or bank payout."
+}

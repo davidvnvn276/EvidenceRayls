@@ -1,0 +1,20 @@
+{
+  "redemption-lab-v2/compilation-warnings.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "redemption-lab-v2/run.cjs": "4b8a2835608038bcadef736fc3c76830c2e4a773b19b303d479b88ff01d75c96",
+  "redemption-lab-v2/package-lock.json": "bbb9b56a959ebf19b05b44afc7b103ea523ed91a41be8083344b91c5f98941e2",
+  "redemption-lab-v2/manifest.json": "cf99adccc13a5d9f6d7ec713c26cbcdc86590e63772f32db6ab008131e726e0b",
+  "redemption-lab-v2/RedemptionLab.sol": "ffb80dee39811918bdb5454359ed8fbc5d84d791cced425cb14554daee0c4cdc",
+  "redemption-lab-v2/compiler-input.json": "e244f025be12cec0bd39c842f077e268ac662efe83b8eca232219396cc6238c7",
+  "redemption-lab-v2/execution.log": "62032541c437d352f9f299646790a2a016b033fa1f2315a2be93a9b47fe2b810",
+  "redemption-lab-v2/results.json": "622069a84a445d8b7bb0de0a4cab87c04018ade0bff87d516466bcc9e7ac87d0",
+  "redemption-lab-v2/package.json": "1f681cb0babd35683f5ddd4e88ae64111c904b84b2a858edcd7deb369e441bac",
+  "redemption-lab-v2/README.md": "e498e13e5832e1ed6c97c2e6c0934e7e897bf806b29c79539c923c329d921646",
+  "independent-run/results.json": "43cc991180b78c9022d46d0c421f921cf3228489dfea7b05ad282877be9b8442",
+  "independent-run/independent-execution.log": "54c4c8b96ae2c53d9a7cb92f7cc1db844d6de3652db18be961d307b8cce74268",
+  "independent-run/compiler-input.json": "e244f025be12cec0bd39c842f077e268ac662efe83b8eca232219396cc6238c7",
+  "independent-run/compilation-warnings.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "david-redemption-v2-reviewed.md": "29b4b84db793e7324f9db0f57f41ef45cfd418cdb8d25c0d058faedcc0ee3dfb",
+  "david-v2-audit-and-image-plan.md": "889b1f228af4e174f6211058172443c437a39ca2b8eba400c331efc3258415f7",
+  "independent-audit.json": "6946ef5d1834e6a1a9b7a008f590ee07e11b811302b9c7e9b8c85a774f2e4a30",
+  "README.md": "3dc8fbfb3035856b4bd5be0ce3b1b144e26af26684dad1804366aebec57bab3d"
+}
